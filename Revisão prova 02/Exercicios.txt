@@ -1,0 +1,96 @@
+1. O que é o retorno NaN em Javascript? Cite um tipo de condição em que este tipo pode
+ser gerado.
+
+R: Em JavaScript, o retorno NaN significa Not a Number (não é um número) e ocorre quando uma operação matemática falha, por exemplo ao tentar dividir zero por zero ou multiplicar uma string por um número.
+
+2. É possível adicionar uma configuração CSS de múltiplas formas em um código HTML. Cite essas formas e dê exemplos de cada uma. Cite também a diferença entre utilizar cada uma dessas formas. 
+
+R: No HTML e CSS, existem três formas principais de aplicar estilos: de forma inline, diretamente na tag; de forma interna, utilizando a tag <style> dentro do <head>; e de forma externa, por meio de um arquivo separado .css ligado com <link>. A escolha depende do contexto: o inline tem prioridade, mas deixa o código poluído; o interno é útil para páginas pequenas; já o externo é a melhor prática por facilitar manutenção e reaproveitamento.
+
+3. Explique a diferença entre as tags <div> e <span>. Dê exemplos de quando usar cada
+uma. 
+
+R: As tags <div> e <span> também possuem diferenças importantes: a <div> é um elemento de bloco, ideal para organizar seções maiores do layout, enquanto o <span> é um elemento inline, usado para destacar trechos pequenos de texto sem quebrar a linha.
+
+4. Descreva o propósito da tag <head> em um documento HTML e cite pelo menos três elementos que podem estar dentro dela.
+
+R: O <head> de um documento HTML é usado para armazenar metadados, ou seja, informações sobre a página que não aparecem diretamente para o usuário. Dentro dele podem estar elementos como <title> (que define o título na aba do navegador), <meta> (para informações de codificação e descrição) e <link> (para importar arquivos externos, como CSS).
+
+5. Diferencie as listas ordenadas (<ol>) das listas não ordenadas (<ul>). Crie um exemplo de cada.
+
+R: As listas ordenadas (<ol>) são numeradas, representando uma sequência lógica, enquanto as listas não ordenadas (<ul>) usam marcadores simples, geralmente para itens sem ordem específica.
+
+6. O que significa a propriedade display no CSS? Compare o comportamento de block, inline e inline-block.
+
+R: No CSS, a propriedade display controla o comportamento dos elementos: block ocupa toda a largura disponível e cria uma nova linha; inline ocupa apenas o espaço do conteúdo sem quebrar linha; e inline-block combina características dos dois, permitindo definir altura e largura mas sem ocupar toda a linha.
+
+7. Explique o que é o Box Model no CSS e descreva suas partes de dentro para fora.
+
+R: Box Model descreve como o navegador calcula o espaço de um elemento, indo de dentro para fora: conteúdo (content), espaçamento interno (padding), borda (border) e espaçamento externo (margin).
+
+8. Qual é a função das tags semânticas no HTML5, como <header>, <section>, <article> e
+<footer>? Dê exemplos de uso.
+
+R: No HTML5, as tags semânticas (como <header>, <section>, <article> e <footer>) ajudam a dar significado ao conteúdo, organizando melhor a estrutura da página e facilitando a compreensão tanto para desenvolvedores quanto para mecanismos de busca.
+
+9. Explique o que é e para que serve o atributo target="_blank" em um link. Quais cuidados de segurança devem ser tomados ao utilizá-lo?
+
+R: O atributo target="_blank" nos links serve para abrir a página em uma nova aba. No entanto, é importante utilizá-lo junto de rel="noopener noreferrer" para evitar problemas de segurança, já que o site aberto poderia acessar a aba original.
+
+10. O que é a propriedade flex no CSS e como ela é usada?
+
+R: A propriedade flex no CSS faz parte do modelo de layout flexível. Ela define como os elementos dentro de um contêiner display: flex vão se ajustar, crescer ou encolher, permitindo organizar melhor os itens em diferentes tamanhos de tela.
+
+11. O que são transições (transition) no CSS e como podem ser usadas para criar efeitos de animação simples? Crie um exemplo básico.
+
+R: As transições (transition) no CSS permitem criar efeitos de animação simples, como mudar suavemente a cor de um botão ao passar o mouse.
+
+16. Quais as diferenças entre criar uma variável do tipo const, var e let? Cite exemplos.
+
+R: A var tem escopo global ou de função e pode ser redeclarada; a let tem escopo de bloco, pode ter seu valor alterado, mas não pode ser redeclarada no mesmo escopo; já a const também tem escopo de bloco, mas representa um valor constante que não pode ser alterado.
+
+17. Responda no console o que será impresso ou qual erro ocorrerá.
+
+R: let y = 20; const z = 30;
+console.log("1) x =", x); // 1) x = undefined
+
+x = 15; y = 25;
+
+console.log(x); // 15 console.log(y); // 25 console.log(z); // 30 var x = 10;
+
+{ var a = 100; let b = 200; const c = 300;
+
+console.log(a); // 100 console.log(b); // 200 console.log(c); // 300 }
+
+console.log(a); // 100 console.log(typeof b); // "undefined" console.log(typeof c); // "undefined"
+
+{ var m = "var da função"; let n = "let da função"; const o = "const da função"; console.log(m); // "var da função" console.log(n); // "let da função" console.log(o); // "const da função" }
+
+console.log(typeof m); // "string" console.log(typeof n); // "undefined" console.log(typeof o); // "undefined"
+
+18. Qual a diferença entre JavaScript e Java?
+
+R: Java e JavaScript são linguagens diferentes. Java é compilado e roda na JVM, tem tipagem estática e é usado em sistemas grandes, como aplicativos Android e softwares corporativos. Já o JavaScript é interpretado pelo navegador ou Node.js, possui tipagem dinâmica e nasceu para tornar páginas web interativas, sendo hoje usado tanto no front-end quanto no back-end.
+
+19. Qual a diferença entre == e === no JavaScript? Dê exemplos práticos.
+
+R: Em JavaScript, == compara apenas os valores e faz conversão de tipos, enquanto === compara valor e tipo ao mesmo tempo. Por exemplo: 5 == "5" é true, mas 5 === "5" é false, pois um é número e o outro é string.
+
+20. O que são operadores lógicos (&&, ||, !) e como eles podem ser usados em condicionais?
+Exemplifique.
+
+R: Em JavaScript, os operadores lógicos &&, || e ! combinam ou invertem condições. && exige que todas sejam verdadeiras, || aceita pelo menos uma verdadeira e ! inverte o valor. Eles são usados em condicionais para decidir ações com base em múltiplas condições.
+
+21. É possível adicionar novas propriedades a um objeto depois de criado? Como?
+
+R: Sim, em JavaScript é possível adicionar novas propriedades a um objeto mesmo depois de criado. Isso pode ser feito usando a notação de ponto, como objeto.propriedade = valor, ou a notação de colchetes, como objeto["propriedade"] = valor. Dessa forma, os objetos são dinâmicos e permitem incluir ou alterar propriedades a qualquer momento.
+
+22. Qual a diferença entre null e undefined no JavaScript?
+
+R: Em JavaScript, null representa a ausência intencional de valor, ou seja, uma variável foi definida mas não possui valor. Já undefined indica que uma variável foi declarada, mas ainda não recebeu nenhum valor. Por exemplo, let x = null; significa que x está vazio de propósito, enquanto let y; faz com que y seja undefined até receber um valor.
+
+23. O que é um objeto em JavaScript e como ele é declarado? Dê um exemplo básico.
+
+R: Em JavaScript, um objeto é uma coleção de propriedades, cada uma com um nome (chave) e um valor, usado para agrupar dados relacionados. Ele é declarado usando chaves {}, por exemplo: let pessoa = { nome: "Lucas", idade: 22, cidade: "São Paulo" };, onde pessoa possui as propriedades nome, idade e cidade.
+
+
