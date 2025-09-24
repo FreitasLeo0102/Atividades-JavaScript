@@ -7,7 +7,7 @@ const boletim = []
 
 for(let i = 0; i < 8; i++){
     let materia = prompt(`Digite o nome da materia`)
-    let nota = Number(prompt(`Digite sua nota em ${materia}`))
+    let nota = Number(prompt(`Digite sua nota em ${materia} (0 a 35)`))
     let freq = Number(prompt(`Digite sua ffrequencia em ${materia}`))
     boletim.push({
         materia: materia,
@@ -21,7 +21,7 @@ let somaFreq = 0, acimaMedia = 0
 boletim.forEach((item, indice) => {
     somaFreq += item.freq
 
-    if(item.nota >= 6){
+    if(item.nota >= 21){
         acimaMedia++
     }
 })

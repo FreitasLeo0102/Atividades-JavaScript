@@ -4,13 +4,13 @@ let produtos = []
 let maior = 0
 let indice
 
-for(let i = 0; i < 5; i++){
+for (let i = 0; i < 5; i++) {
     let preco = Number(prompt("Digite o preço do produto"))
     produtos.push(preco)
 }
 
 produtos.forEach((item, index) => {
-     if(maior < produtos[index]){
+    if (maior < produtos[index]) {
         maior = produtos[index]
         indice = index
     }

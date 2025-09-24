@@ -10,21 +10,21 @@ for (let i = 0; i < 10; i++) {
 
 
 let complemento = fita.map(base => {
-    if (base === "A"){
+    if (base === "A") {
         return "U"
     }
 
-    else if (base === "U"){
+    else if (base === "U") {
         return "A"
-    } 
+    }
 
-    else if (base === "C"){
+    else if (base === "C") {
         return "G"
     }
 
-    else if (base === "G"){
+    else if (base === "G") {
         return "C"
-    } 
+    }
 
 })
 

@@ -2,7 +2,7 @@
 
 let sangue = []
 
-for(let i = 0; i < 10; i++){
+for (let i = 0; i < 10; i++) {
     let tipo = prompt("Digite qual seu tipo sanguineo")
     sangue.push(tipo)
 }
