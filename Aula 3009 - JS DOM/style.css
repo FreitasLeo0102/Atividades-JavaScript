@@ -1,0 +1,15 @@
+.alunos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+}
+
+.aluno {
+    border: solid blue 1px;
+    border-radius: 25%;
+    width: 120px;
+    font-size: larger;
+    text-align: center;
+}
